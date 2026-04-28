@@ -1,0 +1,16 @@
+# SPDX-FileCopyrightText: Copyright (c) 2025-2026, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+# SPDX-License-Identifier: Apache-2.0
+
+# AIMS app pod — DeepStream perception, behavior analytics, foundational
+# services (Kafka/Redis/Elasticsearch), VST/nvstreamer, vss-agent, vss-ui,
+# and alert-bridge. Runs on a single L4 (24 GB).
+#
+# VLM and LLM are NOT included here — the app calls remote NIM endpoints on
+# the nim-pod (see .env: LLM_BASE_URL / VLM_BASE_URL).
+#
+# This is a thin wrapper around the validated dev-profile-alerts compose;
+# the .env in this directory flips *_MODE to remote and points the URLs at
+# the NIM pod.
+
+include:
+  - path: ${MDX_SAMPLE_APPS_DIR}/developer-workflow/dev-profile-alerts/compose.yml
