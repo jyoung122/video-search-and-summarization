@@ -60,7 +60,7 @@ export const InteractionModal = ({
             t.visible ? 'animate-fade-in' : 'animate-fade-out'
           }`}
         >
-          <IconInfoCircle size={16} className="text-[#76b900]" />
+          <IconInfoCircle size={16} className="text-[#2F5FA7]" />
           <span>
             {content?.text || 'No content found for this notification'}
           </span>
@@ -107,7 +107,7 @@ export const InteractionModal = ({
                 </button>
               )}
               <button
-                className="px-4 py-2 bg-[#76b900] text-white rounded hover:bg-[#5a8c00]"
+                className="px-4 py-2 bg-[#2F5FA7] text-white rounded hover:bg-[#264D89]"
                 onClick={handleTextSubmit}
               >
                 Submit
@@ -124,7 +124,7 @@ export const InteractionModal = ({
                   key={option.id}
                   className={`px-4 py-2 ${
                     option?.value?.includes('continue')
-                      ? 'bg-[#76b900]'
+                      ? 'bg-[#2F5FA7]'
                       : 'bg-slate-800'
                   } text-white rounded`}
                   onClick={() => handleChoiceSubmit(option.value)}
@@ -148,7 +148,7 @@ export const InteractionModal = ({
                     value={option.value}
                     checked={userInput === option.value}
                     onChange={() => setUserInput(option.value)}
-                    className="mr-2 text-[#76b900] focus:ring-[#76b900]"
+                    className="mr-2 text-[#2F5FA7] focus:ring-[#2F5FA7]"
                   />
                   <label htmlFor={option.id} className="flex flex-col">
                     <span className="text-slate-800 dark:text-white">
@@ -174,7 +174,7 @@ export const InteractionModal = ({
                 </button>
               )}
               <button
-                className="px-4 py-2 bg-[#76b900] text-white rounded hover:bg-[#5a8c00]"
+                className="px-4 py-2 bg-[#2F5FA7] text-white rounded hover:bg-[#264D89]"
                 onClick={handleRadioSubmit}
               >
                 Submit

@@ -1,68 +1,106 @@
 /* SPDX-License-Identifier: MIT */
-/* Custom rsuite theme - Light mode darker */
+/* Custom rsuite theme — Brand rebrand */
+
 :root {
-  /* Light mode - darker backgrounds */
-  /* --rs-bg-card: #e5e5e5;
-  --rs-bg-overlay: #d4d4d4;
-  --rs-bg-well: #e5e5e5;
-  --rs-bg-active: #d4d4d4; */
-  
-  /* Input backgrounds */
-  /* --rs-input-bg: #e5e5e5;
-  --rs-input-focus-border: #a3a3a3; */
-  
-  /* Dropdown backgrounds */
-  /* --rs-dropdown-bg: #e5e5e5;
-  --rs-dropdown-item-bg-hover: #d4d4d4;
-  --rs-dropdown-item-bg-active: #a3a3a3; */
-  
-  /* Button */
-  --rs-btn-default-bg: #d4d4d4;
-  --rs-btn-default-hover-bg: #a3a3a3;
+  /* RSuite primary color (used for buttons, toggles, checkboxes, links) */
+  --rs-primary-50:  rgba(47, 95, 167, 0.08);
+  --rs-primary-100: rgba(47, 95, 167, 0.15);
+  --rs-primary-200: rgba(47, 95, 167, 0.25);
+  --rs-primary-300: rgba(47, 95, 167, 0.40);
+  --rs-primary-400: rgba(47, 95, 167, 0.60);
+  --rs-primary-500: #2F5FA7;
+  --rs-primary-600: #264D89;
+  --rs-primary-700: #1B2A41;
+
+  /* Override RSuite's internal color references */
+  --rs-color-blue: #2F5FA7;
+  --rs-btn-primary-bg: #2F5FA7;
+  --rs-btn-primary-hover-bg: #264D89;
+  --rs-btn-primary-active-bg: #1B2A41;
+  --rs-btn-primary-text: #FFFFFF;
+
+  /* Links */
+  --rs-link-color: #2F5FA7;
+  --rs-link-hover-color: #264D89;
+
+  /* Button default (light mode) */
+  --rs-btn-default-bg: #F8FAFC;
+  --rs-btn-default-hover-bg: #E5E7EB;
+  --rs-btn-default-text: #222222;
+
+  /* Focus ring */
+  --rs-state-focus-shadow: 0 0 0 3px rgba(47, 95, 167, 0.25);
+  --rs-state-focus-outline: 3px solid rgba(47, 95, 167, 0.25);
+
+  /* Success state (green) */
+  --rs-color-green: #168C47;
+
+  /* Warning/accent state (orange) */
+  --rs-color-orange: #F36F21;
+
+  /* Backgrounds */
+  --rs-bg-card: #FFFFFF;
+  --rs-bg-overlay: #FFFFFF;
+  --rs-bg-well: #F8FAFC;
+  --rs-bg-active: rgba(47, 95, 167, 0.08);
+
+  /* Input */
+  --rs-input-bg: #FFFFFF;
+  --rs-input-focus-border: #2F5FA7;
+
+  /* Dropdown */
+  --rs-dropdown-bg: #FFFFFF;
+  --rs-dropdown-item-bg-hover: #F8FAFC;
+  --rs-dropdown-item-bg-active: rgba(47, 95, 167, 0.10);
+
+  /* Borders */
+  --rs-border-primary: #E5E7EB;
 }
 
-/* Dark mode - keep or adjust as needed */
+/* Dark mode */
 .rs-theme-dark {
+  --rs-primary-50:  rgba(47, 95, 167, 0.10);
+  --rs-primary-100: rgba(47, 95, 167, 0.20);
+  --rs-primary-200: rgba(47, 95, 167, 0.30);
+  --rs-primary-300: rgba(47, 95, 167, 0.45);
+  --rs-primary-400: rgba(47, 95, 167, 0.65);
+  --rs-primary-500: #5880B3;
+  --rs-primary-600: #2F5FA7;
+  --rs-primary-700: #264D89;
+
+  --rs-color-blue: #5880B3;
+  --rs-btn-primary-bg: #2F5FA7;
+  --rs-btn-primary-hover-bg: #5880B3;
+  --rs-btn-primary-active-bg: #264D89;
+  --rs-btn-primary-text: #FFFFFF;
+
+  --rs-link-color: #5880B3;
+  --rs-link-hover-color: #829FBF;
+
+  --rs-btn-default-bg: rgb(107 114 128);
+  --rs-btn-default-hover-bg: rgb(75 85 99);
+  --rs-btn-default-text: #FFFFFF;
+
+  --rs-state-focus-shadow: 0 0 0 3px rgba(88, 128, 179, 0.30);
+  --rs-state-focus-outline: 3px solid rgba(88, 128, 179, 0.30);
+
+  --rs-color-green: #63C192;
+  --rs-color-orange: #F89A4B;
+
   --rs-bg-card: #262626;
   --rs-bg-overlay: #171717;
   --rs-bg-well: #262626;
   --rs-bg-active: #404040;
-  
-  /* --rs-input-bg: #262626;
-  --rs-input-focus-border: #525252; */
-  
+
+  --rs-input-bg: #262626;
+  --rs-input-focus-border: #5880B3;
+
   --rs-dropdown-bg: #262626;
   --rs-dropdown-item-bg-hover: #404040;
   --rs-dropdown-item-bg-active: #525252;
-  
-  --rs-btn-default-bg: rgb(107 114 128);
-  --rs-btn-default-hover-bg: rgb(75 85 99);
-}
 
-/* Alternative: Direct class overrides */
-/* .rs-dropdown-menu {
-  background-color: var(--rs-dropdown-bg);
+  --rs-border-primary: #404040;
 }
-
-.rs-dropdown-item:hover {
-  background-color: var(--rs-dropdown-item-bg-hover);
-}
-
-.rs-input {
-  background-color: var(--rs-input-bg);
-}
-
-.rs-input-group {
-  background-color: var(--rs-input-bg);
-}
-
-.rs-btn-default {
-  background-color: var(--rs-btn-default-bg);
-}
-
-.rs-btn-default:hover {
-  background-color: var(--rs-btn-default-hover-bg);
-} */
 
 /* Increase z-index for DatePicker/CheckPicker popup to appear above Filters popover (FILTER_POPOVER_Z_INDEX = 10600) */
 .rs-picker-popup {

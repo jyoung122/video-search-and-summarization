@@ -72,7 +72,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
     <div
       className={`top-0 z-10 flex justify-center items-center h-12 ${
         hasMessages
-          ? 'bg-[#76b900] sticky'
+          ? 'bg-[#2F5FA7] sticky'
           : 'bg-none'
       }  py-2 px-4 text-sm text-white dark:border-none dark:bg-black dark:text-neutral-200`}
     >
@@ -103,8 +103,8 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                 w-full max-w-md cursor-pointer rounded-xl border-2 border-dashed p-8 
                 transition-all duration-300 ease-in-out
                 ${uploadProps.isDragging 
-                  ? 'border-[#76b900] bg-[#76b900]/10 scale-105 shadow-lg shadow-[#76b900]/20' 
-                  : 'border-gray-300 dark:border-gray-600 hover:border-[#76b900] hover:bg-gray-50 dark:hover:bg-gray-800/50'
+                  ? 'border-[#2F5FA7] bg-[#2F5FA7]/10 scale-105 shadow-lg shadow-[#2F5FA7]/20' 
+                  : 'border-gray-300 dark:border-gray-600 hover:border-[#2F5FA7] hover:bg-gray-50 dark:hover:bg-gray-800/50'
                 }
                 ${uploadProps.isUploading ? 'opacity-50 pointer-events-none' : ''}
               `}
@@ -113,7 +113,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                 <div className={`
                   p-4 rounded-2xl transition-all duration-300
                   ${uploadProps.isDragging 
-                    ? 'bg-[#76b900]/20 text-[#76b900]' 
+                    ? 'bg-[#2F5FA7]/20 text-[#2F5FA7]' 
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500'
                   }
                 `}>
@@ -123,7 +123,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                 <div className="text-center">
                   <p className={`text-base font-medium mb-1 transition-colors duration-300 ${
                     uploadProps.isDragging 
-                      ? 'text-[#76b900]' 
+                      ? 'text-[#2F5FA7]' 
                       : 'text-gray-700 dark:text-gray-300'
                   }`}>
                     {uploadProps.isDragging ? 'Drop files here' : 'Click or drop files here to upload'}
@@ -143,7 +143,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
       {/* Collapsible Menu - opaque background so it hides the title when expanded */}
       <div
         className={`fixed right-0 top-0 h-12 pl-6 flex items-center transition-all duration-300 z-20 ${
-          hasMessages ? 'bg-[#76b900] dark:bg-black' : 'bg-white dark:bg-black'
+          hasMessages ? 'bg-[#2F5FA7] dark:bg-black' : 'bg-white dark:bg-black'
         }`}
       >
         <button
@@ -178,7 +178,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                   });
                 }}
                 className={`relative inline-flex h-5 w-10 items-center cursor-pointer rounded-full transition-colors duration-300 ease-in-out ${
-                  chatHistory ? 'bg-black dark:bg-[#76b900]' : 'bg-gray-200'
+                  chatHistory ? 'bg-black dark:bg-[#2F5FA7]' : 'bg-gray-200'
                 }`}
               >
                 <span
@@ -219,7 +219,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                 }}
                 className={`relative inline-flex h-5 w-10 items-center cursor-pointer rounded-full transition-colors duration-300 ease-in-out ${
                   webSocketModeRef.current
-                    ? 'bg-black dark:bg-[#76b900]'
+                    ? 'bg-black dark:bg-[#2F5FA7]'
                     : 'bg-gray-200'
                 }`}
               >

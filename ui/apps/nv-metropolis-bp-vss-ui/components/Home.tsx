@@ -712,12 +712,12 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
               {/* Render both logos, toggle visibility via CSS for instant switching */}
               <img 
                 src="/NV-logo-white.svg"
-                alt="NVIDIA Logo" 
+                alt="AIMS Logo" 
                 className={`h-9 w-auto transition-opacity duration-150 ${isDark ? 'opacity-100' : 'opacity-0 absolute'}`}
               />
               <img 
                 src="/NV-logo-black.svg"
-                alt="NVIDIA Logo" 
+                alt="AIMS Logo" 
                 className={`h-9 w-auto transition-opacity duration-150 ${isDark ? 'opacity-0 absolute' : 'opacity-100'}`}
               />
             </div>

@@ -3,7 +3,7 @@ import React from 'react';
 import { IconChevronDown, IconVideo, IconX } from '@tabler/icons-react';
 
 const INPUT_CLASS =
-  'w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-[#76b900] focus:outline-none focus:ring-1 focus:ring-[#76b900] dark:border-gray-600 dark:bg-[#343541] dark:text-gray-300';
+  'w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-[#2F5FA7] focus:outline-none focus:ring-1 focus:ring-[#2F5FA7] dark:border-gray-600 dark:bg-[#343541] dark:text-gray-300';
 const POPUP_OVERLAY_CLASS = 'fixed inset-0 z-50 flex items-center justify-center bg-black/50';
 const POPUP_CONTAINER_CLASS = 'mx-4 w-full max-w-xl rounded-lg bg-white p-6 shadow-xl dark:bg-[#343541]';
 
@@ -57,8 +57,8 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
             aria-checked={value}
             disabled={!isChangeable}
             onClick={() => isChangeable && onFieldChange(fileItem.id, fieldName, !value)}
-            className={`relative inline-flex h-5 w-9 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#76b900] focus:ring-offset-2 ${
-              value ? 'bg-[#76b900]' : 'bg-gray-300 dark:bg-gray-600'
+            className={`relative inline-flex h-5 w-9 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#2F5FA7] focus:ring-offset-2 ${
+              value ? 'bg-[#2F5FA7]' : 'bg-gray-300 dark:bg-gray-600'
             } ${isChangeable ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'}`}
           >
             <span
@@ -126,7 +126,7 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
               Files <span className="text-red-500">*</span>
               {files.length > 0 && (
-                <span className="ml-2 rounded-full bg-[#76b900] px-2 py-0.5 text-xs text-white">
+                <span className="ml-2 rounded-full bg-[#2F5FA7] px-2 py-0.5 text-xs text-white">
                   {files.length}
                 </span>
               )}
@@ -134,7 +134,7 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
             {files.length > 0 && (
               <button
                 onClick={onAddMore}
-                className="flex items-center gap-1 rounded-lg bg-[#76b900] px-2 py-1 text-xs font-medium text-white transition-colors hover:bg-[#5a8f00]"
+                className="flex items-center gap-1 rounded-lg bg-[#2F5FA7] px-2 py-1 text-xs font-medium text-white transition-colors hover:bg-[#264D89]"
               >
                 + Add More
               </button>
@@ -163,7 +163,7 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
                             }`}
                           />
                         )}
-                        <IconVideo size={18} className="flex-shrink-0 text-[#76b900]" />
+                        <IconVideo size={18} className="flex-shrink-0 text-[#2F5FA7]" />
                         <span className="truncate text-sm text-gray-700 dark:text-gray-300">
                           {item.file.name}
                         </span>
@@ -201,7 +201,7 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
           ) : (
             <div
               onClick={onAddMore}
-              className="w-full cursor-pointer rounded-lg border-2 border-dashed p-4 text-center transition-colors border-gray-300 hover:border-[#76b900] hover:bg-gray-50 dark:border-gray-600 dark:hover:border-[#76b900] dark:hover:bg-gray-800"
+              className="w-full cursor-pointer rounded-lg border-2 border-dashed p-4 text-center transition-colors border-gray-300 hover:border-[#2F5FA7] hover:bg-gray-50 dark:border-gray-600 dark:hover:border-[#2F5FA7] dark:hover:bg-gray-800"
             >
               <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 Click or drag files here
@@ -221,7 +221,7 @@ export const AgentUploadDialog: React.FC<AgentUploadDialogProps> = ({
           <button
             onClick={onConfirmUpload}
             className={`flex-1 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors ${
-              files.length > 0 ? 'bg-[#76b900] hover:bg-[#5a8f00]' : 'bg-gray-400 cursor-not-allowed'
+              files.length > 0 ? 'bg-[#2F5FA7] hover:bg-[#264D89]' : 'bg-gray-400 cursor-not-allowed'
             }`}
             disabled={files.length === 0}
           >

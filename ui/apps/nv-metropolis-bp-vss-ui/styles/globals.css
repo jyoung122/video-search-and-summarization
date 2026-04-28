@@ -2,3 +2,133 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ============================================================
+   Brand Tokens
+   Single source of truth — all overrides derive from these.
+   ============================================================ */
+:root {
+  --brand-primary:       47, 95, 167;   /* #2F5FA7 */
+  --brand-primary-dark:  27, 42, 65;    /* #1B2A41 */
+  --brand-primary-hover: 38, 77, 137;   /* #264D89 — primary darkened 15% */
+  --brand-accent:        243, 111, 33;  /* #F36F21 */
+  --brand-accent-soft:   248, 154, 75;  /* #F89A4B */
+  --brand-success:       22, 140, 71;   /* #168C47 */
+  --brand-success-soft:  99, 193, 146;  /* #63C192 */
+  --brand-bg:            255, 255, 255; /* #FFFFFF */
+  --brand-surface:       248, 250, 252; /* #F8FAFC */
+  --brand-text:          34, 34, 34;    /* #222222 */
+  --brand-text-muted:    92, 92, 92;    /* #5C5C5C */
+  --brand-border:        229, 231, 235; /* #E5E7EB */
+}
+
+/* ============================================================
+   Tailwind Blue → Primary overrides
+   ============================================================ */
+.bg-blue-50        { background-color: rgba(var(--brand-primary), 0.08) !important; }
+.bg-blue-100       { background-color: rgba(var(--brand-primary), 0.15) !important; }
+.bg-blue-400       { background-color: rgba(var(--brand-primary), 0.60) !important; }
+.bg-blue-500       { background-color: rgba(var(--brand-primary), 0.80) !important; }
+.bg-blue-600       { background-color: rgb(var(--brand-primary)) !important; }
+.bg-blue-700       { background-color: rgb(var(--brand-primary-hover)) !important; }
+
+.text-blue-400     { color: rgba(var(--brand-primary), 0.70) !important; }
+.text-blue-500     { color: rgba(var(--brand-primary), 0.85) !important; }
+.text-blue-600     { color: rgb(var(--brand-primary)) !important; }
+.text-blue-700     { color: rgb(var(--brand-primary-hover)) !important; }
+.text-blue-800     { color: rgb(var(--brand-primary-dark)) !important; }
+.text-blue-900     { color: rgb(var(--brand-primary-dark)) !important; }
+
+.border-blue-200   { border-color: rgba(var(--brand-primary), 0.25) !important; }
+.border-blue-300   { border-color: rgba(var(--brand-primary), 0.40) !important; }
+.border-blue-500   { border-color: rgba(var(--brand-primary), 0.80) !important; }
+.border-blue-600   { border-color: rgb(var(--brand-primary)) !important; }
+
+.ring-blue-400     { --tw-ring-color: rgba(var(--brand-primary), 0.60) !important; }
+.ring-blue-500     { --tw-ring-color: rgba(var(--brand-primary), 0.80) !important; }
+
+.fill-blue-500     { fill: rgba(var(--brand-primary), 0.80) !important; }
+
+/* Blue hover / focus / dark variants */
+.hover\:bg-blue-50:hover   { background-color: rgba(var(--brand-primary), 0.08) !important; }
+.hover\:bg-blue-600:hover  { background-color: rgb(var(--brand-primary)) !important; }
+.hover\:bg-blue-700:hover  { background-color: rgb(var(--brand-primary-hover)) !important; }
+.hover\:text-blue-600:hover { color: rgb(var(--brand-primary)) !important; }
+.hover\:text-blue-900:hover { color: rgb(var(--brand-primary-dark)) !important; }
+.hover\:border-blue-500:hover { border-color: rgba(var(--brand-primary), 0.80) !important; }
+
+.focus\:ring-blue-400:focus { --tw-ring-color: rgba(var(--brand-primary), 0.60) !important; }
+.focus\:ring-blue-500:focus { --tw-ring-color: rgba(var(--brand-primary), 0.80) !important; }
+.focus\:border-blue-500:focus { border-color: rgba(var(--brand-primary), 0.80) !important; }
+
+.dark\:bg-blue-600 { background-color: rgb(var(--brand-primary)) !important; }
+
+/* ============================================================
+   Tailwind Orange → Accent overrides
+   ============================================================ */
+.bg-orange-50      { background-color: rgba(var(--brand-accent), 0.08) !important; }
+.bg-orange-100     { background-color: rgba(var(--brand-accent), 0.15) !important; }
+.bg-orange-500     { background-color: rgb(var(--brand-accent)) !important; }
+.bg-orange-900     { background-color: rgba(var(--brand-accent), 0.20) !important; }
+
+.text-orange-300   { color: rgb(var(--brand-accent-soft)) !important; }
+.text-orange-400   { color: rgba(var(--brand-accent), 0.80) !important; }
+.text-orange-500   { color: rgb(var(--brand-accent)) !important; }
+.text-orange-600   { color: rgb(var(--brand-accent)) !important; }
+.text-orange-700   { color: rgba(var(--brand-accent), 0.85) !important; }
+
+.border-orange-300 { border-color: rgb(var(--brand-accent-soft)) !important; }
+.border-orange-500 { border-color: rgb(var(--brand-accent)) !important; }
+.border-orange-700 { border-color: rgba(var(--brand-accent), 0.70) !important; }
+
+/* Orange hover / dark variants */
+.hover\:bg-orange-100:hover { background-color: rgba(var(--brand-accent), 0.15) !important; }
+.hover\:bg-orange-900:hover { background-color: rgba(var(--brand-accent), 0.20) !important; }
+.hover\:text-orange-300:hover { color: rgb(var(--brand-accent-soft)) !important; }
+
+.dark\:bg-orange-900   { background-color: rgba(var(--brand-accent), 0.20) !important; }
+.dark\:border-orange-700 { border-color: rgba(var(--brand-accent), 0.70) !important; }
+.dark\:text-orange-400 { color: rgba(var(--brand-accent), 0.80) !important; }
+
+/* ============================================================
+   Tailwind Green → Success overrides
+   ============================================================ */
+.bg-green-50       { background-color: rgba(var(--brand-success), 0.08) !important; }
+.bg-green-100      { background-color: rgba(var(--brand-success), 0.15) !important; }
+.bg-green-500      { background-color: rgba(var(--brand-success), 0.80) !important; }
+.bg-green-600      { background-color: rgb(var(--brand-success)) !important; }
+.bg-green-700      { background-color: rgba(var(--brand-success), 0.85) !important; }
+.bg-green-900      { background-color: rgba(var(--brand-success), 0.20) !important; }
+
+.text-green-400    { color: rgb(var(--brand-success-soft)) !important; }
+.text-green-500    { color: rgba(var(--brand-success), 0.80) !important; }
+.text-green-600    { color: rgb(var(--brand-success)) !important; }
+.text-green-700    { color: rgba(var(--brand-success), 0.85) !important; }
+
+.border-green-200  { border-color: rgba(var(--brand-success), 0.25) !important; }
+.border-green-300  { border-color: rgba(var(--brand-success), 0.40) !important; }
+.border-green-500  { border-color: rgba(var(--brand-success), 0.80) !important; }
+.border-green-700  { border-color: rgba(var(--brand-success), 0.85) !important; }
+
+.ring-green-400    { --tw-ring-color: rgba(var(--brand-success), 0.60) !important; }
+.ring-green-500    { --tw-ring-color: rgba(var(--brand-success), 0.80) !important; }
+
+.fill-green-500    { fill: rgba(var(--brand-success), 0.80) !important; }
+
+/* Green hover / focus / dark variants */
+.hover\:bg-green-100:hover { background-color: rgba(var(--brand-success), 0.15) !important; }
+.hover\:bg-green-500:hover { background-color: rgba(var(--brand-success), 0.80) !important; }
+.hover\:bg-green-600:hover { background-color: rgb(var(--brand-success)) !important; }
+.hover\:bg-green-700:hover { background-color: rgba(var(--brand-success), 0.85) !important; }
+.hover\:bg-green-900:hover { background-color: rgba(var(--brand-success), 0.20) !important; }
+
+.focus\:ring-green-400:focus { --tw-ring-color: rgba(var(--brand-success), 0.60) !important; }
+.focus\:ring-green-500:focus { --tw-ring-color: rgba(var(--brand-success), 0.80) !important; }
+.focus\:border-green-500:focus { border-color: rgba(var(--brand-success), 0.80) !important; }
+
+.dark\:bg-green-500    { background-color: rgba(var(--brand-success), 0.80) !important; }
+.dark\:bg-green-700    { background-color: rgba(var(--brand-success), 0.85) !important; }
+.dark\:bg-green-900    { background-color: rgba(var(--brand-success), 0.20) !important; }
+.dark\:border-green-700 { border-color: rgba(var(--brand-success), 0.85) !important; }
+.dark\:text-green-400  { color: rgb(var(--brand-success-soft)) !important; }
+.dark\:text-green-500  { color: rgba(var(--brand-success), 0.80) !important; }

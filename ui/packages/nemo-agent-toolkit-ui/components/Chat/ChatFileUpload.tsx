@@ -41,7 +41,7 @@ interface FileWithFormData {
 }
 
 // CSS class constants
-const INPUT_CLASS = 'w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-[#76b900] focus:outline-none focus:ring-1 focus:ring-[#76b900] dark:border-gray-600 dark:bg-[#343541] dark:text-gray-300';
+const INPUT_CLASS = 'w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-[#2F5FA7] focus:outline-none focus:ring-1 focus:ring-[#2F5FA7] dark:border-gray-600 dark:bg-[#343541] dark:text-gray-300';
 const POPUP_OVERLAY_CLASS = 'fixed inset-0 z-50 flex items-center justify-center bg-black/50';
 const POPUP_CONTAINER_CLASS = 'mx-4 w-full max-w-xl rounded-lg bg-white p-6 shadow-xl dark:bg-[#343541]';
 
@@ -620,7 +620,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                 <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
                   Files <span className="text-red-500">*</span>
                   {selectedFiles.length > 0 && (
-                    <span className="ml-2 rounded-full bg-[#76b900] px-2 py-0.5 text-xs text-white">
+                    <span className="ml-2 rounded-full bg-[#2F5FA7] px-2 py-0.5 text-xs text-white">
                       {selectedFiles.length}
                     </span>
                   )}
@@ -628,7 +628,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                 {selectedFiles.length > 0 && (
                   <button
                     onClick={triggerFilePicker}
-                    className="flex items-center gap-1 rounded-lg bg-[#76b900] px-2 py-1 text-xs font-medium text-white transition-colors hover:bg-[#5a8f00]"
+                    className="flex items-center gap-1 rounded-lg bg-[#2F5FA7] px-2 py-1 text-xs font-medium text-white transition-colors hover:bg-[#264D89]"
                   >
                     <IconPlus size={14} />
                     Add More
@@ -661,7 +661,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                                     className={`flex-shrink-0 text-gray-400 transition-transform duration-200 ${fileItem.isExpanded ? 'rotate-180' : ''}`}
                                   />
                                 )}
-                                <IconVideo size={18} className="flex-shrink-0 text-[#76b900]" />
+                                <IconVideo size={18} className="flex-shrink-0 text-[#2F5FA7]" />
                                 <span className="truncate text-sm text-gray-700 dark:text-gray-300">
                                   {fileItem.file.name}
                                 </span>
@@ -705,8 +705,8 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                                             aria-checked={value}
                                             disabled={!isChangeable}
                                             onClick={() => isChangeable && handleFileFormDataChange(fileItem.id, fieldName, !value)}
-                                            className={`relative inline-flex h-5 w-9 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#76b900] focus:ring-offset-2 ${
-                                              value ? 'bg-[#76b900]' : 'bg-gray-300 dark:bg-gray-600'
+                                            className={`relative inline-flex h-5 w-9 flex-shrink-0 rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-[#2F5FA7] focus:ring-offset-2 ${
+                                              value ? 'bg-[#2F5FA7]' : 'bg-gray-300 dark:bg-gray-600'
                                             } ${isChangeable ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'}`}
                                           >
                                             <span
@@ -836,8 +836,8 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                   onDrop={handleMediaDrop}
                   className={`w-full cursor-pointer rounded-lg border-2 border-dashed p-4 text-center transition-colors ${
                     isDraggingMedia
-                      ? 'border-[#76b900] bg-[#76b900]/10'
-                      : 'border-gray-300 hover:border-[#76b900] hover:bg-gray-50 dark:border-gray-600 dark:hover:border-[#76b900] dark:hover:bg-gray-800'
+                      ? 'border-[#2F5FA7] bg-[#2F5FA7]/10'
+                      : 'border-gray-300 hover:border-[#2F5FA7] hover:bg-gray-50 dark:border-gray-600 dark:hover:border-[#2F5FA7] dark:hover:bg-gray-800'
                   }`}
                 >
                   <IconVideoPlus size={40} className="mx-auto text-gray-400" />
@@ -864,7 +864,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                 disabled={selectedFiles.length === 0}
                 className={`flex-1 rounded-lg px-4 py-2 text-sm font-medium text-white transition-colors ${
                   selectedFiles.length > 0
-                    ? 'bg-[#76b900] hover:bg-[#5a8f00]'
+                    ? 'bg-[#2F5FA7] hover:bg-[#264D89]'
                     : 'bg-gray-400'
                 }`}
               >
@@ -904,7 +904,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                   <div className="mb-2 flex items-center justify-between">
                     <div className="flex items-center gap-2 overflow-hidden">
                       {fileItem.uploadStatus === 'uploading' ? (
-                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-gray-300 border-t-[#76b900]" />
+                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-gray-300 border-t-[#2F5FA7]" />
                       ) : fileItem.uploadStatus === 'success' ? (
                         <IconCheck size={16} className="flex-shrink-0 text-green-500" />
                       ) : fileItem.uploadStatus === 'error' ? (
@@ -923,7 +923,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                         fileItem.uploadStatus === 'success' ? 'text-green-500' 
                         : fileItem.uploadStatus === 'error' ? 'text-red-500'
                         : fileItem.uploadStatus === 'cancelled' ? 'text-orange-500'
-                        : fileItem.uploadStatus === 'uploading' ? 'text-[#76b900]'
+                        : fileItem.uploadStatus === 'uploading' ? 'text-[#2F5FA7]'
                         : 'text-gray-400'
                       }`}>
                         {fileItem.uploadStatus === 'success' ? 'Done' 
@@ -951,7 +951,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                         fileItem.uploadStatus === 'success' ? 'bg-green-500'
                         : fileItem.uploadStatus === 'error' ? 'bg-red-500'
                         : fileItem.uploadStatus === 'cancelled' ? 'bg-orange-500'
-                        : 'bg-[#76b900]'
+                        : 'bg-[#2F5FA7]'
                       }`}
                       style={{ width: `${fileItem.uploadProgress || 0}%` }}
                     />
@@ -1132,7 +1132,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
             {/* Button */}
             <button
               onClick={handleClosePopup}
-              className="w-full rounded-lg bg-[#76b900] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#5a8f00]"
+              className="w-full rounded-lg bg-[#2F5FA7] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#264D89]"
             >
               Close
             </button>

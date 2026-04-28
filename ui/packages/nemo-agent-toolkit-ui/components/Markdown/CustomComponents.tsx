@@ -103,7 +103,7 @@ export const getReactMarkDownCustomComponents = (
         ({ href, children, ...props }) => (
           <a
             href={href}
-            className="text-[#76b900] no-underline hover:underline"
+            className="text-[#2F5FA7] no-underline hover:underline"
             {...props}
           >
             {children}
@@ -142,7 +142,7 @@ export const getReactMarkDownCustomComponents = (
 
           return validContent ? (
             <sup
-              className="text-xs bg-gray-100 text-[#76b900] border border-[#e7ece0] px-1 py-0.5 rounded-md shadow-sm"
+              className="text-xs bg-gray-100 text-[#2F5FA7] border border-[#D1DFEF] px-1 py-0.5 rounded-md shadow-sm"
               style={{
                 fontWeight: 'bold',
                 marginLeft: '2px',

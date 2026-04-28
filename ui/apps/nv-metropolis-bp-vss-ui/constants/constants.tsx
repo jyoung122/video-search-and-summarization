@@ -5,9 +5,9 @@ import { env } from 'next-runtime-env';
 export const APPLICATION_TITLE = 
   env('NEXT_PUBLIC_APP_TITLE') || 
   process?.env?.NEXT_PUBLIC_APP_TITLE || 
-  'VSS BLUEPRINT';
+  'AIMS';
 
 export const APPLICATION_SUBTITLE = 
   env('NEXT_PUBLIC_APP_SUBTITLE') || 
   process?.env?.NEXT_PUBLIC_APP_SUBTITLE || 
-  '';
+  'Accident Intelligent Monitoring System';

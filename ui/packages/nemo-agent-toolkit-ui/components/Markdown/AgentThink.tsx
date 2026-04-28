@@ -131,7 +131,7 @@ export const AgentThink = ({ children, title, ...props }: AgentThinkProps) => {
           {isStreaming && (
             <IconLoader2 
               size={20} 
-              className="text-[#76b900] animate-spin flex-shrink-0" 
+              className="text-[#2F5FA7] animate-spin flex-shrink-0" 
             />
           )}
           <span className="font-medium text-gray-700 dark:text-gray-200">
@@ -225,7 +225,7 @@ export const AgentThinkStep = ({ children, title, ...props }: AgentThinkStepProp
             {isStreaming && (
               <IconLoader2 
                 size={16} 
-                className="text-[#76b900] animate-spin flex-shrink-0" 
+                className="text-[#2F5FA7] animate-spin flex-shrink-0" 
               />
             )}
             <span className="text-sm font-medium text-gray-700 dark:text-gray-200">

@@ -31,7 +31,7 @@ interface CustomAgentParamsProps {
 const generateId = () => Math.random().toString(36).substring(2, 11);
 
 // Reusable input styles
-const inputClass = "w-full px-2 py-1.5 text-sm bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[#76b900]";
+const inputClass = "w-full px-2 py-1.5 text-sm bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[#2F5FA7]";
 
 export const CustomAgentParams: React.FC<CustomAgentParamsProps> = ({
   isOpen,
@@ -75,7 +75,7 @@ export const CustomAgentParams: React.FC<CustomAgentParamsProps> = ({
             disabled={!isChangeable}
             onClick={() => isChangeable && handleFieldChange(field.id, !field.value)}
             className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
-              field.value ? 'bg-[#76b900]' : 'bg-gray-300 dark:bg-gray-600'
+              field.value ? 'bg-[#2F5FA7]' : 'bg-gray-300 dark:bg-gray-600'
             } ${disabledClass}`}
           >
             <span

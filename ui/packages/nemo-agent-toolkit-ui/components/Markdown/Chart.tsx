@@ -74,7 +74,7 @@ const Chart = (props: any) => {
   } = useContext(HomeContext);
 
   const colors = {
-    fill: '#76b900',
+    fill: '#2F5FA7',
     stroke: 'black',
   };
 
@@ -263,7 +263,7 @@ const Chart = (props: any) => {
   return (
     <div className="pb-2">
       <IconDownload
-        className="w-4 h-4 hover:text-[#76b900] absolute top-[4.5rem] right-[4.5rem]"
+        className="w-4 h-4 hover:text-[#2F5FA7] absolute top-[4.5rem] right-[4.5rem]"
         onClick={handleDownload}
       />
       <div className="pt-4" id={`chart-${Label}`}>

@@ -227,7 +227,7 @@ export const ChatMessage: FC<Props> = memo(
 
                     <div className="mt-10 flex justify-center space-x-4">
                       <button
-                        className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 text-sm font-medium text-neutral-700 enabled:hover:bg-[#76b900] enabled:hover:text-white disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300"
+                        className="h-[40px] rounded-md border border-neutral-300 px-4 py-1 text-sm font-medium text-neutral-700 enabled:hover:bg-[#2F5FA7] enabled:hover:text-white disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300"
                         onClick={handleEditMessage}
                         disabled={messageContent.trim().length <= 0}
                       >
@@ -331,12 +331,12 @@ export const ChatMessage: FC<Props> = memo(
                           {showMessageCopy && (messagedCopied ? (
                             <IconCheck
                               size={20}
-                              className="text-[#76b900] dark:text-[#76b900]"
+                              className="text-[#2F5FA7] dark:text-[#2F5FA7]"
                               id={message?.id}
                             />
                           ) : (
                             <button
-                              className="text-[#76b900] hover:text-gray-700 dark:text-[#76b900] dark:hover:round-gray-300"
+                              className="text-[#2F5FA7] hover:text-gray-700 dark:text-[#2F5FA7] dark:hover:round-gray-300"
                               onClick={copyOnClick}
                               title="Copy to clipboard"
                               id={message?.id}
@@ -346,7 +346,7 @@ export const ChatMessage: FC<Props> = memo(
                           ))}
                           {showMessageSpeaker && (
                             <button
-                              className="text-[#76b900] hover:text-gray-700 dark:text-[#76b900] dark:hover:text-gray-300"
+                              className="text-[#2F5FA7] hover:text-gray-700 dark:text-[#2F5FA7] dark:hover:text-gray-300"
                               onClick={handleTextToSpeech}
                               aria-label={
                                 isPlaying ? 'Stop speaking' : 'Start speaking'
