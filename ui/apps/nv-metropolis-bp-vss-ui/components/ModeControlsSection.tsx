@@ -53,9 +53,6 @@ export const ModeControlsSection: React.FC<ModeControlsSectionProps> = ({
   return (
     <div 
       className="flex flex-col flex-1 overflow-hidden border-b border-gray-300 dark:border-gray-600"
-      style={{
-        boxShadow: 'inset 0 8px 12px -2px rgba(0, 0, 0, 0.3)'
-      }}
     >
       {/* Section Header */}
       <div className="px-4 pt-3 pb-2 flex-shrink-0" title={activeTabLabel ? `${activeTabLabel} Tab Controls` : undefined}>

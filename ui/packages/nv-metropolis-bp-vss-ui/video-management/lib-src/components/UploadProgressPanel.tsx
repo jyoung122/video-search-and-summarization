@@ -30,7 +30,7 @@ export const UploadProgressPanel: React.FC<UploadProgressPanelProps> = ({
   const hasActiveUploads = inProgressCount > 0 || pendingCount > 0;
 
   return (
-    <div className="fixed bottom-4 right-4 w-96 rounded-lg shadow-lg border z-50 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600">
+    <div className="fixed bottom-4 right-4 w-96 rounded-lg border z-50 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600">
       {/* Header */}
       <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-600">
         <div className="flex items-center gap-2">

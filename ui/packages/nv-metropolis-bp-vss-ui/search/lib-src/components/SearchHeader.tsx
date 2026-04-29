@@ -268,7 +268,7 @@ export const SearchHeader: React.FC<SearchHeaderProps> = ({ onUpdateSearchParams
 
     const inputGroupStyle = useMemo(() => ({
       width: 400,
-      ...(hasQueryError ? { borderColor: '#f44336', boxShadow: '0 0 0 1px #f44336' } : {}),
+      ...(hasQueryError ? { borderColor: '#f44336' } : {}),
     }), [hasQueryError]);
 
     const visibleTags = useMemo(

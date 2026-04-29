@@ -56,7 +56,7 @@ export const InteractionModal = ({
     toast.custom(
       (t) => (
         <div
-          className={`flex gap-2 items-center justify-evenly bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-100 px-4 py-2 rounded-lg shadow-md ${
+          className={`flex gap-2 items-center justify-evenly bg-white text-slate-800 dark:bg-slate-800 dark:text-slate-100 px-4 py-2 rounded-lg ${
             t.visible ? 'animate-fade-in' : 'animate-fade-out'
           }`}
         >
@@ -83,7 +83,7 @@ export const InteractionModal = ({
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-      <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg sm:w-[75%] h-auto">
+      <div className="bg-white dark:bg-gray-800 p-6 rounded-lg sm:w-[75%] h-auto">
         <div className="mb-4 text-slate-800 dark:text-white prose prose-base dark:prose-invert max-w-none prose-headings:font-semibold prose-p:my-1 max-h-[60vh] overflow-y-auto">
           <ReactMarkdown>{content?.text || ''}</ReactMarkdown>
         </div>

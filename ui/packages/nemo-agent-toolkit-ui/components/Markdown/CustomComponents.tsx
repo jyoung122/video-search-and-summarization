@@ -142,7 +142,7 @@ export const getReactMarkDownCustomComponents = (
 
           return validContent ? (
             <sup
-              className="text-xs bg-gray-100 text-[#2F5FA7] border border-[#D1DFEF] px-1 py-0.5 rounded-md shadow-sm"
+              className="text-xs bg-gray-100 text-[#2F5FA7] border border-[#D1DFEF] px-1 py-0.5 rounded-md"
               style={{
                 fontWeight: 'bold',
                 marginLeft: '2px',

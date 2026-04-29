@@ -138,7 +138,6 @@ export const FilterDialog: React.FC<FilterDialogProps> = ({
           : { top: '100%', left: 0, marginTop: 8 }),
         padding: 12,
         borderRadius: 6,
-        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
         border: `1px solid ${isDark ? '#3c3f43' : '#e5e5ea'}`,
         backgroundColor: isDark ? '#1a1d24' : '#fff',
         zIndex: usePortal ? FILTER_POPOVER_Z_INDEX : 1050,

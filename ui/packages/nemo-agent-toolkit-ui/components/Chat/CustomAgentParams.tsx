@@ -79,7 +79,7 @@ export const CustomAgentParams: React.FC<CustomAgentParamsProps> = ({
             } ${disabledClass}`}
           >
             <span
-              className={`inline-block h-4 w-4 transform rounded-full bg-white shadow-md transition-transform ${
+              className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
                 field.value ? 'translate-x-6' : 'translate-x-1'
               }`}
             />
@@ -137,7 +137,7 @@ export const CustomAgentParams: React.FC<CustomAgentParamsProps> = ({
         onClick={onClose}
       />
       {/* Dialog */}
-      <div className="absolute bottom-full right-0 mb-2 min-w-60 max-w-80 bg-white dark:bg-[#2d2d30] rounded-xl shadow-2xl border border-gray-200 dark:border-gray-700 z-50 overflow-hidden">
+      <div className="absolute bottom-full right-0 mb-2 min-w-60 max-w-80 bg-white dark:bg-[#2d2d30] rounded-xl border border-gray-200 dark:border-gray-700 z-50 overflow-hidden">
         {/* Form Content */}
         <div className="p-4 space-y-4 max-h-[400px] overflow-y-auto">
           {fields.length === 0 ? (

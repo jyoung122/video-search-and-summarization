@@ -136,7 +136,7 @@ export const AutoRefreshControl: React.FC<AutoRefreshControlProps> = ({
   return (
     <div 
       ref={containerRef} 
-      className={`absolute top-full right-0 mt-2 w-96 rounded-lg shadow-lg border z-50 ${
+      className={`absolute top-full right-0 mt-2 w-96 rounded-lg border z-50 ${
         isDark 
           ? 'bg-gray-800 border-gray-600' 
           : 'bg-white border-gray-200'

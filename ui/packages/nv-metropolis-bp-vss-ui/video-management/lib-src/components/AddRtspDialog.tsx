@@ -111,7 +111,7 @@ export const AddRtspDialog: React.FC<AddRtspDialogProps> = ({
 
       {/* Dialog panel */}
       <div
-        className="relative z-50 rounded-lg shadow-lg border bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600 w-[720px] max-w-[calc(100vw-32px)]"
+        className="relative z-50 rounded-lg border bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600 w-[720px] max-w-[calc(100vw-32px)]"
       >
         {/* Header */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-gray-200 dark:border-gray-600">

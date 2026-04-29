@@ -108,7 +108,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
           <button
             type="button"
             onClick={handleUploadClick}
-            className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 bg-green-600 dark:bg-green-500 hover:bg-green-700 dark:hover:bg-green-600 text-white dark:text-gray-900 focus:ring-green-500 dark:focus:ring-green-400 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 cursor-pointer"
+            className="inline-flex items-center px-4 py-2 text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 bg-green-600 dark:bg-green-500 hover:bg-green-700 dark:hover:bg-green-600 text-white dark:text-gray-900 focus:ring-green-500 dark:focus:ring-green-400 focus:ring-offset-gray-50 dark:focus:ring-offset-gray-900 cursor-pointer"
           >
             + Upload Video
           </button>
@@ -193,7 +193,7 @@ export const Toolbar: React.FC<ToolbarProps> = ({
                 <div
                   role="group"
                   aria-label="Display file type"
-                  className="w-40 absolute left-0 top-full mt-1 rounded-md border shadow-lg z-50 py-1 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600"
+                  className="w-40 absolute left-0 top-full mt-1 rounded-md border z-50 py-1 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600"
                 >
                     {enableVideoUpload && (
                       <label

@@ -429,7 +429,7 @@ export const ChatInput = ({
             </button>
           )}
 
-        <div className="relative mx-2 flex w-full flex-grow flex-col rounded-md border border-black/10 bg-white shadow-[0_0_10px_rgba(0,0,0,0.10)] dark:border-gray-900/50 dark:bg-[#40414F] dark:text-white dark:shadow-[0_0_15px_rgba(0,0,0,0.10)] sm:mx-4">
+        <div className="relative mx-2 flex w-full flex-grow flex-col rounded-md border border-black/10 bg-white dark:border-gray-900/50 dark:bg-[#40414F] dark:text-white sm:mx-4">
           {!content && !isRecording && (
             <div
               className={`pointer-events-none absolute inset-0 flex items-center py-2 text-gray-500 dark:text-gray-400 md:py-3 ${
@@ -592,7 +592,7 @@ export const ChatInput = ({
           {showScrollDownButton && (
             <div className="absolute bottom-12 right-0 lg:bottom-2 lg:-right-10">
               <button
-                className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-300 text-gray-800 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-neutral-200"
+                className="flex h-7 w-7 items-center justify-center rounded-full bg-neutral-300 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-neutral-200"
                 onClick={onScrollDownClick}
               >
                 <IconArrowDown size={18} />

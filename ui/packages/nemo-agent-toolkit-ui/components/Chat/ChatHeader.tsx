@@ -103,7 +103,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
                 w-full max-w-md cursor-pointer rounded-xl border-2 border-dashed p-8 
                 transition-all duration-300 ease-in-out
                 ${uploadProps.isDragging 
-                  ? 'border-[#2F5FA7] bg-[#2F5FA7]/10 scale-105 shadow-lg shadow-[#2F5FA7]/20' 
+                  ? 'border-[#2F5FA7] bg-[#2F5FA7]/10 scale-105'
                   : 'border-gray-300 dark:border-gray-600 hover:border-[#2F5FA7] hover:bg-gray-50 dark:hover:bg-gray-800/50'
                 }
                 ${uploadProps.isUploading ? 'opacity-50 pointer-events-none' : ''}
@@ -263,7 +263,7 @@ export const ChatHeader = ({ webSocketModeRef = {}, onSend }: ChatHeaderProps) =
               <IconUserFilled size={20} />
             </button>
             {isMenuOpen && (
-              <div className="absolute right-0 mt-2 px-2 w-auto rounded-md shadow-lg bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
+              <div className="absolute right-0 mt-2 px-2 w-auto rounded-md bg-white dark:bg-gray-800 ring-1 ring-black ring-opacity-5">
                 <div className="py-1">
                   <button
                     onClick={handleLogin}

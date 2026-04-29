@@ -183,7 +183,7 @@ export const CustomIncidents = memo<CustomIncidentsProps>(
           const timestamp = formatTimestamp(incident['Clip Information'].Timestamp);
 
           return (
-            <div key={index} className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:shadow-md border border-gray-200 dark:border-gray-600">
+            <div key={index} className="rounded-lg overflow-hidden bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all border border-gray-200 dark:border-gray-600">
               {/* Alert Header */}
               <div 
                 className="flex items-center justify-between p-2 cursor-pointer transition-colors"
@@ -306,7 +306,7 @@ export const CustomIncidents = memo<CustomIncidentsProps>(
             {hasMoreItems && (
               <button 
                 onClick={handleViewMore}
-                className="px-6 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-lg border border-gray-300 dark:border-gray-600 transition-all hover:shadow-md font-medium"
+                className="px-6 py-3 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-100 rounded-lg border border-gray-300 dark:border-gray-600 transition-all font-medium"
               >
                 Show more ({incidents.length - visibleCount} more)
               </button>
@@ -314,7 +314,7 @@ export const CustomIncidents = memo<CustomIncidentsProps>(
             {canShowLess && (
               <button 
                 onClick={handleViewLess}
-                className="px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg border border-gray-300 dark:border-gray-600 transition-all hover:shadow-md font-medium"
+                className="px-6 py-3 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-200 rounded-lg border border-gray-300 dark:border-gray-600 transition-all font-medium"
               >
                 Show less
               </button>

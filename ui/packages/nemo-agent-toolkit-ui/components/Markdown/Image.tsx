@@ -91,7 +91,7 @@ export const Image = memo(
               onLoad={handleImageLoad}
               loading="eager"  // Changed from lazy - lazy + hidden causes loading issues
               decoding="async"
-              className="object-cover rounded-lg border border-slate-100 shadow-xs cursor-pointer"
+              className="object-cover rounded-lg border border-slate-100 cursor-pointer"
               onClick={toggleFullscreen}
               style={{ 
                 maxWidth: '100%', 

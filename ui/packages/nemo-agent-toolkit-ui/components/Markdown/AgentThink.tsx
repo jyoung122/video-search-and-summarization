@@ -114,7 +114,7 @@ export const AgentThink = ({ children, title, ...props }: AgentThinkProps) => {
 
   return (
     <div
-      className="my-3 bg-neutral-100 dark:bg-zinc-700 border border-neutral-300 dark:border-zinc-600 rounded-lg shadow-sm overflow-hidden"
+      className="my-3 bg-neutral-100 dark:bg-zinc-700 border border-neutral-300 dark:border-zinc-600 rounded-lg overflow-hidden"
       {...props}
     >
       {/* Header/Summary */}
@@ -210,7 +210,7 @@ export const AgentThinkStep = ({ children, title, ...props }: AgentThinkStepProp
       </div>
       
       {/* Content container - no border */}
-      <div className="bg-gray-100/50 dark:bg-zinc-600/50 rounded-md shadow-sm overflow-hidden">
+      <div className="bg-gray-100/50 dark:bg-zinc-600/50 rounded-md overflow-hidden">
         {/* Header/Summary */}
         <div
           className={`flex items-center justify-between px-3 py-2 ${

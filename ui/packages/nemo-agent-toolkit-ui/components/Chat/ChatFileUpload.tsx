@@ -43,7 +43,7 @@ interface FileWithFormData {
 // CSS class constants
 const INPUT_CLASS = 'w-full rounded-lg border border-gray-300 bg-white px-3 py-1.5 text-sm text-gray-700 focus:border-[#2F5FA7] focus:outline-none focus:ring-1 focus:ring-[#2F5FA7] dark:border-gray-600 dark:bg-[#343541] dark:text-gray-300';
 const POPUP_OVERLAY_CLASS = 'fixed inset-0 z-50 flex items-center justify-center bg-black/50';
-const POPUP_CONTAINER_CLASS = 'mx-4 w-full max-w-xl rounded-lg bg-white p-6 shadow-xl dark:bg-[#343541]';
+const POPUP_CONTAINER_CLASS = 'mx-4 w-full max-w-xl rounded-lg bg-white p-6 dark:bg-[#343541]';
 
 interface ChatFileUploadProps {
   /** Callback when upload completes successfully */
@@ -710,7 +710,7 @@ export const ChatFileUpload: React.FC<ChatFileUploadProps> = ({
                                             } ${isChangeable ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'}`}
                                           >
                                             <span
-                                              className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out ${
+                                              className={`pointer-events-none inline-block h-4 w-4 transform rounded-full bg-white ring-0 transition duration-200 ease-in-out ${
                                                 value ? 'translate-x-4' : 'translate-x-0'
                                               }`}
                                             />

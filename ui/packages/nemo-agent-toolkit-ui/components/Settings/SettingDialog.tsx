@@ -154,7 +154,7 @@ export const SettingDialog: FC<Props> = ({ open, onClose }) => {
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50 dark:bg-opacity-20">
       <div
         ref={modalRef}
-        className="w-full max-w-md bg-white dark:bg-[#202123] rounded-2xl shadow-lg p-6 transform transition-all relative"
+        className="w-full max-w-md bg-white dark:bg-[#202123] rounded-2xl p-6 transform transition-all relative"
       >
         <h2 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
           {t('Settings')}

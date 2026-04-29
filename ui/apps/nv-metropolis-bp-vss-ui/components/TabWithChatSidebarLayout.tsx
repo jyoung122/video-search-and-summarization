@@ -100,7 +100,7 @@ export function TabWithChatSidebarLayout({
               {highlightIcon && (
                 <button
                   type="button"
-                  className="absolute left-0 top-1/2 z-10 flex h-5 w-5 items-center justify-center rounded-full border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-400 shadow-lg"
+                  className="absolute left-0 top-1/2 z-10 flex h-5 w-5 items-center justify-center rounded-full border-2 border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-700 dark:hover:text-gray-200 focus:outline-none focus:ring-2 focus:ring-amber-400"
                   style={{ transform: 'translate(-50%, -50%)' }}
                   onClick={(e) => {
                     e.stopPropagation();

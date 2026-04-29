@@ -28,7 +28,7 @@ const Loading = ({ message = 'Loading', type = 'text' }) => {
           </div>
         </div>
       ) : (
-        <div className="relative w-full max-w-[600px] h-[300px] sm:h-[400px] bg-gray-100 flex items-center justify-center rounded-md shadow-md animate-none">
+        <div className="relative w-full max-w-[600px] h-[300px] sm:h-[400px] bg-gray-100 flex items-center justify-center rounded-md animate-none">
           <span
             className={`font-medium focus:outline-none transition-colors duration-300 dark:text-white text-center`}
           >

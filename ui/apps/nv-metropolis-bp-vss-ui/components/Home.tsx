@@ -685,11 +685,10 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
     <div className="h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
       {/* Top Header */}
       <header 
-        className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 shadow-sm relative" 
-        style={{ 
+        className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 relative"
+        style={{
           height: '75px',
-          boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
-          borderBottom: isDark 
+          borderBottom: isDark
             ? '6px solid rgba(75, 85, 99, 0.6)'
             : '6px solid rgba(156, 163, 175, 0.4)',
         }}
@@ -698,9 +697,6 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
         <div 
           className="absolute inset-0 pointer-events-none"
           style={{
-            boxShadow: isDark 
-              ? 'inset 0 -6px 20px rgba(0, 0, 0, 0.4), inset 0 -6px 20px rgba(0, 0, 0, 0.3)'
-              : 'inset 0 -6px 20px rgba(0, 0, 0, 0.15), inset 0 -6px 20px rgba(0, 0, 0, 0.1)',
             zIndex: 1
           }}
         />
@@ -708,17 +704,11 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
         {/* Header content */}
         <div className="h-full px-6 flex items-center justify-between relative z-10">
           <div className="flex items-center space-x-2 flex-1 min-w-0">
-            <div className="flex items-center gap-2 p-2 flex-shrink-0 relative">
-              {/* Render both logos, toggle visibility via CSS for instant switching */}
-              <img 
-                src="/NV-logo-white.svg"
-                alt="AIMS Logo" 
-                className={`h-9 w-auto transition-opacity duration-150 ${isDark ? 'opacity-100' : 'opacity-0 absolute'}`}
-              />
-              <img 
-                src="/NV-logo-black.svg"
-                alt="AIMS Logo" 
-                className={`h-9 w-auto transition-opacity duration-150 ${isDark ? 'opacity-0 absolute' : 'opacity-100'}`}
+            <div className="flex items-center gap-2 p-2 flex-shrink-0">
+              <img
+                src="/aims-logo.png"
+                alt="AIMS Logo"
+                className="h-9 w-auto"
               />
             </div>
             <div className="flex-shrink-0 w-[2px] h-[19px] bg-black dark:bg-white" />
@@ -781,8 +771,8 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
                       w-full flex items-center px-3 py-2 text-[14px] font-medium rounded-md
                       transition-all duration-200 ease-in-out border-r-4
                       ${activeTab === tab.id
-                        ? 'bg-gray-300 dark:bg-gray-600 text-gray-900 dark:text-white border-gray-400 dark:border-gray-800 shadow-lg hover:bg-gray-400 dark:hover:bg-gray-700'
-                        : 'text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 hover:shadow-md hover:scale-[1.02] border-transparent'
+                        ? 'bg-gray-300 dark:bg-gray-600 text-gray-900 dark:text-white border-gray-400 dark:border-gray-800 hover:bg-gray-400 dark:hover:bg-gray-700'
+                        : 'text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 hover:scale-[1.02] border-transparent'
                       }
                     `}
                   >
@@ -812,7 +802,6 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
             <div 
               className="px-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 flex items-end justify-center"
               style={{
-                boxShadow: 'inset 0 8px 12px -2px rgba(0, 0, 0, 0.3)',
                 height: '32px',
                 paddingBottom: '4px'
               }}
@@ -828,18 +817,12 @@ export default function Home({ alertsData, searchData, dashboardData, mapData, v
         <main 
           className="flex-1 flex flex-col overflow-hidden"
           style={{
-            boxShadow: isDark 
-              ? '-6px -6px 20px rgba(0, 0, 0, 0.4), 0 -6px 20px rgba(0, 0, 0, 0.3)'
-              : '-6px -6px 20px rgba(0, 0, 0, 0.15), 0 -6px 20px rgba(0, 0, 0, 0.1)',
-            borderLeft: visibleTabs.length > 0 ? (isDark 
+            borderLeft: visibleTabs.length > 0 ? (isDark
               ? '6px solid rgba(75, 85, 99, 0.6)'
               : '6px solid rgba(156, 163, 175, 0.4)') : 'none',
-            borderTop: isDark 
+            borderTop: isDark
               ? '6px solid rgba(75, 85, 99, 0.6)'
               : '6px solid rgba(156, 163, 175, 0.4)',
-            filter: isDark 
-              ? 'drop-shadow(-2px -2px 8px rgba(0, 0, 0, 0.3))'
-              : 'drop-shadow(-2px -2px 8px rgba(0, 0, 0, 0.1))',
             position: 'relative'
           }}
         >

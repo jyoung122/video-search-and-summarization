@@ -136,7 +136,7 @@ export const MetadataSection: React.FC<MetadataSectionProps> = ({
                   )}
                 </button>
                 {showTooltip && !isPromptCopied && (
-                  <div className={`absolute z-50 bottom-full right-0 mb-2 px-3 py-2 rounded shadow-lg border max-w-xs sm:max-w-md whitespace-pre-wrap break-words text-xs ${
+                  <div className={`absolute z-50 bottom-full right-0 mb-2 px-3 py-2 rounded border max-w-xs sm:max-w-md whitespace-pre-wrap break-words text-xs ${
                     isDark 
                       ? 'bg-gray-800 border-gray-600 text-gray-200' 
                       : 'bg-white border-gray-300 text-gray-800'

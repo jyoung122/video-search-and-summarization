@@ -108,7 +108,7 @@ export const CustomTimeInput: React.FC<CustomTimeInputProps> = ({
   return (
     <div 
       ref={customContainerRef} 
-      className={`absolute top-full left-0 mt-2 w-80 rounded-lg shadow-lg border z-50 ${
+      className={`absolute top-full left-0 mt-2 w-80 rounded-lg border z-50 ${
         isDark 
           ? 'bg-gray-800 border-gray-600' 
           : 'bg-white border-gray-200'

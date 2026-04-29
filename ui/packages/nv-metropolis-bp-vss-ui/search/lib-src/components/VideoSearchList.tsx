@@ -75,7 +75,7 @@ export const VideoSearchList: React.FC<VideoSearchListProps> = ({
               {data.map((item, index) => (
                   <div 
                       key={`${item.video_name}-${index}`}
-                      className={`rounded-2xl overflow-hidden bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-700 dark:border-gray-600 w-[280px] min-w-[280px] max-w-[280px] box-border`}
+                      className={`rounded-2xl overflow-hidden bg-white border border-gray-200 rounded-lg dark:bg-gray-700 dark:border-gray-600 w-[280px] min-w-[280px] max-w-[280px] box-border`}
                   >
                       {/* Video Thumbnail Container */}
                       <div className="p-4 pb-0 space-y-3">
@@ -98,7 +98,7 @@ export const VideoSearchList: React.FC<VideoSearchListProps> = ({
                             
                             {/* Play Button Overlay */}
                             <div className="absolute inset-0 flex items-center justify-center" onClick={() => onPlayVideo(item, showObjectsBbox)}>
-                                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[rgb(209_255_117_/_0.6)] flex items-center justify-center shadow-lg transition-transform hover:scale-110 border border-white/30">
+                                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[rgb(209_255_117_/_0.6)] flex items-center justify-center transition-transform hover:scale-110 border border-white/30">
                                     <svg className="w-6 h-6 sm:w-7 sm:h-7 text-white ml-0.5" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M8 5v14l11-7z" />
                                     </svg>
